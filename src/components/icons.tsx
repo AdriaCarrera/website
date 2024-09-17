@@ -65,15 +65,15 @@ export const Icons = {
   ),
   Hamburguer: (props: React.SVGProps<SVGSVGElement>) => (
     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path d="M4.5 7.5H31.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M4.5 18H31.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M4.5 28.5H31.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4.5 7.5H31.5" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M4.5 18H31.5" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M4.5 28.5H31.5" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
   Cross: (props: React.SVGProps<SVGSVGElement>) => (
     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path d="M27 9L9 27" stroke="#111112" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
-      <path d="M9 9L27 27" stroke="#111112" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+      <path d="M27 9L9 27" stroke="#111112" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round" />
+      <path d="M9 9L27 27" stroke="#111112" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round" />
     </svg>
   ),
 };
