@@ -36,7 +36,7 @@ const links: HeaderLinkProps[] = [
 ];
 
 export function Header(): JSX.Element {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(true);
 
   const handleToggleMenu = () => {
     setOpen((prev) => {
@@ -46,8 +46,8 @@ export function Header(): JSX.Element {
   };
 
   return (
-    <header className="w-full bg-foreground">
-      <nav className="flex gap-20 items-center py-6 px-10">
+    <header className="w-full bg-foreground z-30">
+      <nav className="flex gap-20 items-center py-6 px-4">
         <Icons.XRPLEVMBlack />
 
         <ul className="md:flex gap-20 items-center hidden">
@@ -62,8 +62,12 @@ export function Header(): JSX.Element {
       </nav>
 
       {isOpen && (
-        <motion.div className="fixed bg-foreground right-0 left-0 bottom-0 h-screen z-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          <div className="flex justify-between px-10 py-6">
+        <motion.div
+          className="fixed bg-foreground right-0 left-0 top-0 bottom-0 h-screen min-h-screen z-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          <div className="flex justify-between px-4 py-6">
             <button type="button" onClick={handleToggleMenu}>
               <Icons.XRPLEVMBlack />
             </button>
@@ -73,7 +77,7 @@ export function Header(): JSX.Element {
             </button>
           </div>
 
-          <div className="h-screen overflow-auto px-10">
+          <div className="min-h-screen overflow-auto px-4">
             <motion.ul
               initial="hidden"
               animate="show"
