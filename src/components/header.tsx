@@ -36,7 +36,7 @@ const links: HeaderLinkProps[] = [
 ];
 
 export function Header(): JSX.Element {
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
 
   const handleToggleMenu = () => {
     setOpen((prev) => {
