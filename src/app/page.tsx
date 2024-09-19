@@ -2,6 +2,7 @@ import { About } from "@/components/about";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Vision } from "@/components/vision";
+import { Why } from "@/components/why";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Vision />
       <About />
+      <Why />
     </div>
   );
 }

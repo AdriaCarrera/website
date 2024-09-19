@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export function Vision(): JSX.Element {
   return (
-    <section className="px-4 py-8 md:p-20 w-full flex flex-col gap-8 md:gap-16 bg-black">
+    <section className="px-4 py-8 md:p-20 w-full flex flex-col gap-8 md:gap-16">
       <p className="font-bold text-xl md:text-[40px]">Vision</p>
       <div className="p-4 md:p-10 bg-[#232325] max-w-[900px] mx-auto">
         <Accordion type="single" collapsible>
