@@ -13,11 +13,11 @@ export function About(): JSX.Element {
           <p className="text-sm md:text-xl">Cost per transaction</p>
         </div>
         <div className="bg-[#111112] p-4 md:p-8 flex flex-1 flex-col items-center gap-4 md:gap-6 border-[0.75px] border-white">
-          <p className="text-xl md:text-[40px] font-semibold">3-5s</p>
+          <p className="text-xl md:text-[40px] font-semibold">1,000</p>
           <p className="text-sm md:text-xl">Transactions per second</p>
         </div>
         <div className="bg-[#111112] p-4 md:p-8 flex flex-1 flex-col items-center gap-4 md:gap-6 border-[0.75px] border-white">
-          <p className="text-xl md:text-[40px] font-semibold">1,000</p>
+          <p className="text-xl md:text-[40px] font-semibold">3-5s</p>
           <p className="text-sm md:text-xl">Average block time</p>
         </div>
       </div>
