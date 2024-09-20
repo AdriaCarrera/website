@@ -1,4 +1,5 @@
 import { About } from "@/components/about";
+import { GetStarted } from "@/components/get-started";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Vision } from "@/components/vision";
@@ -12,6 +13,7 @@ export default function Home() {
       <Vision />
       <About />
       <Why />
+      <GetStarted />
     </div>
   );
 }

@@ -88,13 +88,17 @@ export const Icons = {
       />
     </svg>
   ),
-  BigCircle: (props: React.SVGProps<SVGSVGElement>) => (
-    <svg width="272" height="272" viewBox="0 0 272 272" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M136 271C210.558 271 271 210.558 271 136C271 61.4416 210.558 1 136 1C61.4416 1 1 61.4416 1 136C1 210.558 61.4416 271 136 271Z"
-        stroke="white"
-        strokeWidth="0.75"
-      />
+  ArrowUpRight: (props: React.SVGProps<SVGSVGElement>) => (
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <g clip-path="url(#clip0_2425_692)">
+        <path d="M0.871826 10.9497L11.2153 1.05017" stroke="#9A52FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M0.871826 1.05017H11.2153V10.9497" stroke="#9A52FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_2425_692">
+          <rect width="11.9113" height="11.3996" fill="white" transform="translate(0.088623 0.300171)" />
+        </clipPath>
+      </defs>
     </svg>
   ),
 };
