@@ -1,6 +1,6 @@
 export function Why(): JSX.Element {
   return (
-    <section className="w-full p-0 md:pt-[100px] md:pb-[47px]">
+    <section className="p-0 md:pt-[100px] md:pb-[47px]">
       <div className="px-4 py-8 md:pl-20 md:pb-16">
         <p className="font-bold text-xl md:text-[40px]">Why build on the XRPL EVM Sidechain</p>
       </div>

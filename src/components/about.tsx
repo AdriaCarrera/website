@@ -1,6 +1,6 @@
 export function About(): JSX.Element {
   return (
-    <section className="px-4 py-8 md:px-20 md:py-[100px] w-full flex flex-col gap-4 md:gap-[42px]">
+    <section className="px-4 py-8 md:px-20 md:py-[100px] flex flex-col gap-4 md:gap-[42px]">
       <p className="font-bold text-xl md:text-[40px]">About</p>
       <p className="text-xs md:text-xl">
         XRPL EVM Sidechain is a fast and secure sidechain connected to XRP Ledger via an Axelar bridge. Powered by eXRP as its native token,

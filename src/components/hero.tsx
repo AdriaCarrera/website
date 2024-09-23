@@ -4,7 +4,7 @@ import "./grid.css";
 
 export function Hero() {
   return (
-    <section className="relative h-[512px] w-full md:h-auto md:aspect-[2/1] overflow-hidden">
+    <section className="relative h-[512px] md:h-auto md:aspect-[2/1] overflow-hidden">
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#E54D00] via-black to-primary"></div>
 

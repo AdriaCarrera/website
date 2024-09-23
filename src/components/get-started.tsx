@@ -21,7 +21,7 @@ function ExternalLink({ href, label }: ExternalLinkProps) {
 
 export function GetStarted(): JSX.Element {
   return (
-    <section className="w-full">
+    <section>
       <div className="px-4 py-8 md:pt-[100px] md:pl-20 md:pb-16 bg-background">
         <p className="font-bold text-xl md:text-[40px]">Get started on the XRPL EVM Sidechain</p>
       </div>
