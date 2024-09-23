@@ -1,6 +1,5 @@
 import { Icons } from "./icons";
 import { Button } from "./ui/button";
-import "./grid.css";
 
 export function Hero() {
   return (

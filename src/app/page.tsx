@@ -7,6 +7,9 @@ import { Stats } from "@/components/stats";
 import { Vision } from "@/components/vision";
 import { Why } from "@/components/why";
 
+import "@/components/grid.css";
+import { Powered } from "@/components/powered";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -18,6 +21,7 @@ export default function Home() {
       <GetStarted />
       <Builders />
       <Stats />
+      <Powered />
     </div>
   );
 }
