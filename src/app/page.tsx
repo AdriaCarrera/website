@@ -3,6 +3,7 @@ import { Builders } from "@/components/builders";
 import { GetStarted } from "@/components/get-started";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
+import { Stats } from "@/components/stats";
 import { Vision } from "@/components/vision";
 import { Why } from "@/components/why";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Why />
       <GetStarted />
       <Builders />
+      <Stats />
     </div>
   );
 }
