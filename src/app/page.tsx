@@ -9,6 +9,7 @@ import { Why } from "@/components/why";
 
 import "@/components/grid.css";
 import { Powered } from "@/components/powered";
+import { Governance } from "@/components/governance";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Builders />
       <Stats />
       <Powered />
+      <Governance />
     </div>
   );
 }
