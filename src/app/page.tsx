@@ -11,6 +11,7 @@ import "@/components/grid.css";
 import { Powered } from "@/components/powered";
 import { Governance } from "@/components/governance";
 import { Cta } from "@/components/cta";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Powered />
       <Governance />
       <Cta />
+      <Footer />
     </div>
   );
 }
