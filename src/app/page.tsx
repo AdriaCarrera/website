@@ -10,6 +10,7 @@ import { Why } from "@/components/why";
 import "@/components/grid.css";
 import { Powered } from "@/components/powered";
 import { Governance } from "@/components/governance";
+import { Cta } from "@/components/cta";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Stats />
       <Powered />
       <Governance />
+      <Cta />
     </div>
   );
 }
