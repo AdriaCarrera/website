@@ -27,7 +27,12 @@ export function GetStarted(): JSX.Element {
       </div>
 
       <div className="relative h-[396px] md:h-auto md:aspect-[2/1] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-black to-black"></div>
+        <div
+          className="bg-cover bg-center h-full w-full"
+          style={{
+            backgroundImage: "url('/get-started-bg.webp')",
+          }}
+        />
 
         <div className="absolute inset-0 grid-overlay">
           <div className="grid grid-cols-[repeat(4,1fr)_0.2fr] grid-rows-[repeat(5,1fr)_0.66fr] md:grid-cols-16 md:grid-rows-8 h-full w-full gap-4 md:gap-0">
