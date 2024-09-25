@@ -30,7 +30,7 @@ export function GetStarted(): JSX.Element {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-black to-black"></div>
 
         <div className="absolute inset-0 grid-overlay">
-          <div className="grid grid-cols-[repeat(4,1fr)_0.5fr] grid-rows-[repeat(5,1fr)_0.5fr] md:grid-cols-16 md:grid-rows-8 h-full w-full gap-4 md:gap-0">
+          <div className="grid grid-cols-[repeat(4,1fr)_0.2fr] grid-rows-[repeat(5,1fr)_0.66fr] md:grid-cols-16 md:grid-rows-8 h-full w-full gap-4 md:gap-0">
             <div className="ml-4 mt-4 md:m-0 h-[50px] md:h-auto col-span-4 col-start-1 row-start-1 md:col-start-3 md:row-start-2 md:col-span-4 md:row-span-1 bg-[#232325] border-[0.5px] border-white p-4 md:p-5">
               <ExternalLink href="" label="Build an XRPL cross-chain dApp" />
             </div>

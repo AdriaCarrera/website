@@ -4,8 +4,8 @@ export function Powered(): JSX.Element {
   return (
     <section className="relative h-[425px] md:h-full md:aspect-[2/1] overflow-hidden">
       <div className="absolute inset-0 powered-grid-overlay">
-        <div className="grid grid-cols-[repeat(4,1fr)_0.5fr] grid-rows-[repeat(5,1fr)_0.5fr] md:grid-cols-16 md:grid-rows-8 h-full w-full">
-          <div className="col-start-1 row-start-1 col-span-11 row-span-8 bg-black xl:border-[0.5px] xl:border-white py-8 px-4 md:pt-16 md:pl-20 md:pr-32 flex flex-col gap-8 md:gap-16">
+        <div className="grid grid-cols-[repeat(4,1fr)_0.2fr] grid-rows-[repeat(5,1fr)_0.66fr] md:grid-cols-16 md:grid-rows-8 h-full w-full">
+          <div className="col-start-1 row-start-1 col-span-11 row-span-8 bg-black xl:border-[0.5px] xl:border-white py-8 px-4 md:pt-16 md:pl-20 flex flex-col gap-8 md:gap-16">
             <p className="font-bold text-xl md:text-[40px]">Powered by Proven Technology</p>
 
             <ol className="list-decimal pl-5">

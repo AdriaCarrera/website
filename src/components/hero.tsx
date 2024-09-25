@@ -4,13 +4,11 @@ import { Button } from "./ui/button";
 export function Hero() {
   return (
     <section className="relative h-[512px] md:h-auto md:aspect-[2/1] overflow-hidden">
-      {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#E54D00] via-black to-primary"></div>
 
-      {/* Grid overlay */}
       <div className="absolute inset-0 grid-overlay">
-        <div className="grid grid-cols-[repeat(4,1fr)_0.5fr] grid-rows-[repeat(5,1fr)_0.5fr] md:grid-cols-16 md:grid-rows-8 h-full w-full">
-          <div className="ml-4 md:ml-0 col-span-4 col-start-1 row-start-2 md:col-start-3 md:col-span-12 md:row-start-2 md:row-span-3 bg-background py-4 px-6 md:py-10 md:px-6 lg:py-16 lg:px-10 z-10 border-white border-[0.5px]">
+        <div className="grid grid-cols-[repeat(4,1fr)_0.2fr] grid-rows-[repeat(5,1fr)_0.66fr] md:grid-cols-16 md:grid-rows-8 h-full w-full">
+          <div className="ml-4 md:ml-0 col-span-4 col-start-1 row-start-2 md:col-start-3 md:col-span-12 md:row-start-2 md:row-span-3 bg-background py-4 md:py-10 px-6 lg:py-16 lg:px-10 z-10 border-white border-[0.5px]">
             <h1 className="font-semibold text-2xl leading-[28px] md:text-4xl xl:text-6xl xl:leading-[70px]">
               Be the first to build a Unicorn on the XRPL EVM Sidechain
             </h1>

@@ -8,7 +8,7 @@ export function Why(): JSX.Element {
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-black to-pink-500"></div>
 
         <div className="absolute inset-0 grid-overlay">
-          <div className="grid grid-cols-[repeat(4,1fr)_0.5fr] grid-rows-[repeat(5,1fr)_0.5fr] md:grid-cols-16 md:grid-rows-8 h-full w-full">
+          <div className="grid grid-cols-[repeat(4,1fr)_0.2fr] grid-rows-[repeat(5,1fr)_0.66fr] md:grid-cols-16 md:grid-rows-8 h-full w-full">
             <div className="ml-4 my-4 mt-8 md:mt-0 md:ml-0 md:my-0 col-span-4 col-start-1 row-start-1 md:col-start-3 md:row-start-2 md:col-span-5 md:row-span-3 bg-background border-[0.5px] border-white flex flex-col gap-6 p-5">
               <p className="font-semibold text-sm md:text-lg xl:text-xl">First-Mover Advantage</p>
               <p className="text-sm xl:text-xl">

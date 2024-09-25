@@ -4,7 +4,7 @@ export function Stats(): JSX.Element {
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-blue-950" />
 
       <div className="absolute inset-0 grid-overlay">
-        <div className="grid grid-cols-[repeat(4,1fr)_0.5fr] grid-rows-[repeat(5,1fr)_0.5fr] md:grid-cols-16 md:grid-rows-8 h-full w-full">
+        <div className="grid grid-cols-[repeat(4,1fr)_0.2fr] grid-rows-[repeat(5,1fr)_0.66fr] md:grid-cols-16 md:grid-rows-8 h-full w-full">
           <div className="ml-4 my-4 mt-8 md:mt-0 md:ml-0 md:my-0 col-span-4 col-start-1 row-start-1 md:col-start-2 md:row-start-2 md:col-span-9 md:row-span-1 bg-background border-[0.5px] border-white p-4 md:py-5 md:px-10">
             <p className="font-bold md:text-2xl">Devnet live since 2014</p>
           </div>
