@@ -18,11 +18,11 @@ const itemVariant = {
 const links: HeaderLinkProps[] = [
   {
     label: "Developers",
-    url: "",
+    url: "https://docs.xrplevm.org/",
   },
   {
     label: "Cross-chain dApps",
-    url: "",
+    url: "http://dapps.xrplevm.org/",
     target: "_blank",
   },
   {
@@ -31,7 +31,7 @@ const links: HeaderLinkProps[] = [
   },
   {
     label: "FAQ",
-    url: "#faq",
+    url: "https://opensource.ripple.com/docs/evm-sidechain/xrpl-evm-sidechain-faq/",
   },
 ];
 

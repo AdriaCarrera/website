@@ -8,7 +8,7 @@ type FooterLinkProps = {
 
 function FooterLink({ href, label }: FooterLinkProps): JSX.Element {
   return (
-    <Link href={href} className="flex items-center gap-2">
+    <Link href={href} target="_blank" className="flex items-center gap-2">
       <span className="text-xs md:text-base">{label}</span>
       <Icons.ArrowUpRight />
     </Link>
@@ -18,15 +18,15 @@ function FooterLink({ href, label }: FooterLinkProps): JSX.Element {
 const links: FooterLinkProps[] = [
   {
     label: "Discord",
-    href: "",
+    href: "discord.gg/xrplevm",
   },
   {
     label: "Twitter/X",
-    href: "",
+    href: "https://x.com/peersyst",
   },
   {
     label: "Cross-chain dApps",
-    href: "",
+    href: "http://dapps.xrplevm.org/",
   },
 ];
 

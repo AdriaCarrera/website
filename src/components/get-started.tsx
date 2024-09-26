@@ -57,7 +57,7 @@ export function GetStarted(): JSX.Element {
             </div>
 
             <div className="ml-4 mt-[50px] md:m-0 h-[50px] md:h-auto col-span-4 col-start-1 row-start-3 md:col-start-11 md:row-start-6 md:col-span-4 md:row-span-1 bg-[#232325] border-[0.5px] border-white p-4 md:p-5">
-              <ExternalLink href="" label="Join the community" />
+              <ExternalLink href="discord.gg/xrplevm " label="Join the community" />
             </div>
 
             <div className="hidden md:block md:col-start-13 md:row-start-2 md:col-span-3 md:row-span-3">

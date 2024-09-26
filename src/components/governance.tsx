@@ -23,7 +23,7 @@ export function Governance(): JSX.Element {
 
             <div className="text-sm md:text-xl font-bold">
               <p>Want to become a validator?</p>
-              <Link href="" className="text-primary">
+              <Link href="https://docs.xrplevm.org/docs/evm-sidechain/join-evm-sidechain-devnet/" target="_blank" className="text-primary">
                 Find out how
               </Link>
             </div>
