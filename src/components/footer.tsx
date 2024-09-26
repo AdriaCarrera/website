@@ -18,7 +18,7 @@ function FooterLink({ href, label }: FooterLinkProps): JSX.Element {
 const links: FooterLinkProps[] = [
   {
     label: "Discord",
-    href: "discord.gg/xrplevm",
+    href: "https://discord.gg/xrplevm",
   },
   {
     label: "Twitter/X",

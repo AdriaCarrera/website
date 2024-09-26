@@ -52,7 +52,7 @@ export function Header(): JSX.Element {
 
         <ul className="md:flex gap-20 items-center hidden">
           {links.map((link) => (
-            <HeaderLink key={link.label} {...link} />
+            <HeaderLink key={link.label} target="_blank" {...link} />
           ))}
         </ul>
 
