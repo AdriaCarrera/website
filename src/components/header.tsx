@@ -22,7 +22,7 @@ const links: HeaderLinkProps[] = [
   },
   {
     label: "Cross-chain dApps",
-    url: "http://dapps.xrplevm.org/",
+    url: "http://crosschain.xrplevm.org/",
     target: "_blank",
   },
   {

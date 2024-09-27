@@ -26,7 +26,7 @@ const links: FooterLinkProps[] = [
   },
   {
     label: "Cross-chain dApps",
-    href: "http://dapps.xrplevm.org/",
+    href: "http://crosschain.xrplevm.org/",
   },
 ];
 
