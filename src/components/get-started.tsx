@@ -8,7 +8,7 @@ type ExternalLinkProps = {
 
 function ExternalLink({ href, label }: ExternalLinkProps) {
   return (
-    <Link href={href} target="_blank" className="flex items-center hover:opacity-80">
+    <Link href={href} target="_blank" className="flex h-full items-center justify-center hover:opacity-80">
       <div className="flex flex-1">
         <p className="font-bold text-sm md:text-lg xl:text-xl">{label}</p>
       </div>

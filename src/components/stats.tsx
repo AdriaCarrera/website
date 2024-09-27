@@ -1,7 +1,20 @@
-export function Stats(): JSX.Element {
+import { NumberTicker } from "./number-ticker";
+
+export async function Stats() {
+  const [stats, dApps] = await Promise.all([
+    fetch("https://explorer-stats.xrplevm.org/api/v1/counters"),
+    fetch("https://explorer.xrplevm.org/assets/marketplace_config.json"),
+  ]);
+  const statsData = await stats.json();
+
+  const dAppsData = await dApps.json();
+
+  const completedTransactions = statsData.counters.find((stat: { id: string }) => stat.id === "completedTxns");
+  const totalContracts = statsData.counters.find((stat: { id: string }) => stat.id === "totalContracts");
+  const totalAddresses = statsData.counters.find((stat: { id: string }) => stat.id === "totalAddresses");
+
   return (
     <section className="relative h-[588px] md:h-auto md:aspect-[2/1] overflow-hidden">
-      {/* <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-blue-950" /> */}
       <div
         className="bg-cover bg-center h-full w-full"
         style={{
@@ -21,7 +34,7 @@ export function Stats(): JSX.Element {
               backgroundImage: "url('/stats-1.webp')",
             }}
           >
-            <p className="font-semibold text-xl md:text-[40px]">511k+</p>
+            <NumberTicker className="font-semibold text-xl md:text-[40px]" value={completedTransactions.value} />
             <p className="text-sm md:text-xl">Completed transactions</p>
           </div>
 
@@ -31,7 +44,7 @@ export function Stats(): JSX.Element {
               backgroundImage: "url('/stats-2.webp')",
             }}
           >
-            <p className="font-semibold text-xl md:text-[40px]">46k+</p>
+            <NumberTicker className="font-semibold text-xl md:text-[40px]" value={totalContracts.value} />
             <p className="text-sm md:text-xl">Smart contracts</p>
           </div>
 
@@ -41,7 +54,7 @@ export function Stats(): JSX.Element {
               backgroundImage: "url('/stats-3.webp')",
             }}
           >
-            <p className="font-semibold text-xl md:text-[40px]">54k+</p>
+            <NumberTicker className="font-semibold text-xl md:text-[40px]" value={totalAddresses.value} />
             <p className="text-sm md:text-xl">Wallets/addresses</p>
           </div>
 
@@ -51,7 +64,7 @@ export function Stats(): JSX.Element {
               backgroundImage: "url('/stats-4.webp')",
             }}
           >
-            <p className="font-semibold text-xl md:text-[40px]">15</p>
+            <NumberTicker className="font-semibold text-xl md:text-[40px]" value={dAppsData.length} />
             <p className="text-sm md:text-xl">dApps in testnet</p>
           </div>
         </div>
