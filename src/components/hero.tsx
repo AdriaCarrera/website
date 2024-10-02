@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { Icons } from "./icons";
-import { Button } from "./ui/button";
+import { buttonVariants } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
@@ -39,7 +41,19 @@ export function Hero() {
           </div>
 
           <div className="col-span-2 col-start-3 row-start-4 h-[45px] md:h-auto md:col-start-12 md:row-start-7 md:col-span-3 md:row-span-1 z-10 border-white border-[0.5px]">
-            <Button className="w-full h-full rounded-none font-semibold text-xl md:text-2xl hover:bg-[#7919FF]">Get Started</Button>
+            <Link
+              className={cn(
+                buttonVariants({
+                  variant: "default",
+                  className: cn("w-full h-full rounded-none font-semibold text-xl md:text-2xl"),
+                }),
+                "hover:bg-[#7919FF]"
+              )}
+              href="https://docs.xrplevm.org/docs/evm-sidechain/get-started-evm-sidechain/"
+              target="_blank"
+            >
+              Get Started
+            </Link>
           </div>
 
           <div className="hidden md:block md:col-start-3 md:row-start-4 md:col-span-3 md:row-span-3">

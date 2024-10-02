@@ -34,3 +34,15 @@
     background-size: calc(100% / 16) calc(100% / 8);
   }
 }
+
+.stats-grid-overlay {
+  background-image: linear-gradient(to right, rgba(255, 255, 255) 0.75px, transparent 0.75px),
+    linear-gradient(to bottom, rgba(255, 255, 255) 0.75px, transparent 0.75px);
+  background-size: calc(100% / 4.2) calc(100% / 8.66);
+}
+
+@media (min-width: 768px) {
+  .stats-grid-overlay {
+    background-size: calc(100% / 16) calc(100% / 8);
+  }
+}

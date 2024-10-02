@@ -1,5 +1,13 @@
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
 import { Icons } from "./icons";
+
+function ExternalLink(props: LinkProps & { children: React.ReactNode }): JSX.Element {
+  return (
+    <Link className="hover:opacity-80" target="_blank" {...props}>
+      {props.children}
+    </Link>
+  );
+}
 
 export function Governance(): JSX.Element {
   return (
@@ -32,21 +40,47 @@ export function Governance(): JSX.Element {
           <div className="ml-4 md:m-0 h-[400px] md:h-auto col-start-1 row-start-3 col-span-4 md:col-start-9 md:row-start-3 md:col-span-8 md:row-span-5 bg-black border-[0.5px] border-white p-8 md:p-10">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-20 items-center">
               <div className="col-span-2 md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-                <Icons.RippleLogo className="h-5 xl:h-auto" />
-                <Icons.EvmosLogo className="h-5 xl:h-auto" />
-                <Icons.BlockscoutLogo className="h-5 xl:h-auto" />
-                <Icons.PeersystLogo className="h-5 xl:h-auto" />
+                <ExternalLink href="https://ripple.com/">
+                  <Icons.RippleLogo className="h-5 xl:h-auto" />
+                </ExternalLink>
+                <ExternalLink href="https://evmos.org/">
+                  <Icons.EvmosLogo className="h-5 xl:h-auto" />
+                </ExternalLink>
+                <ExternalLink href="https://www.blockscout.com/">
+                  <Icons.BlockscoutLogo className="h-5 xl:h-auto" />
+                </ExternalLink>
+                <ExternalLink href="https://peersyst.com/">
+                  <Icons.PeersystLogo className="h-5 xl:h-auto" />
+                </ExternalLink>
               </div>
 
-              <Icons.XrpCafeLogo className="h-5 xl:h-auto" />
-              <Icons.LinkpoolLogo className="h-5 xl:h-auto" />
-              <Icons.CatalyzeLogo className="h-5 xl:h-auto" />
-              <Icons.CommonsLogo className="h-5 xl:h-auto" />
-              <Icons.PurpleMarketsLogo className="h-5 xl:h-auto" />
-              <Icons.KintsugiLogo className="h-5 xl:h-auto" />
-              <Icons.PalmeraLogo className="h-5 xl:h-auto" />
-              <Icons.MoaiFinanceLogo className="h-5 xl:h-auto" />
-              <Icons.SG1Logo className="h-5 xl:h-auto" />
+              <ExternalLink href="https://xrp.cafe">
+                <Icons.XrpCafeLogo className="h-5 xl:h-auto" />
+              </ExternalLink>
+              <ExternalLink href="https://linkpool.com/">
+                <Icons.LinkpoolLogo className="h-5 xl:h-auto" />
+              </ExternalLink>
+              <ExternalLink href="https://catalyze-research.com/">
+                <Icons.CatalyzeLogo className="h-5 xl:h-auto" />
+              </ExternalLink>
+              <ExternalLink href="https://www.xrpl-commons.org/">
+                <Icons.CommonsLogo className="h-5 xl:h-auto" />
+              </ExternalLink>
+              <ExternalLink href="">
+                <Icons.PurpleMarketsLogo className="h-5 xl:h-auto" />
+              </ExternalLink>
+              <ExternalLink href="https://kintsugi.tech/">
+                <Icons.KintsugiLogo className="h-5 xl:h-auto" />
+              </ExternalLink>
+              <ExternalLink href="https://www.palmeradao.xyz/">
+                <Icons.PalmeraLogo className="h-5 xl:h-auto" />
+              </ExternalLink>
+              <ExternalLink href="https://moai-finance.xyz/">
+                <Icons.MoaiFinanceLogo className="h-5 xl:h-auto" />
+              </ExternalLink>
+              <ExternalLink href="https://sg-1.online/">
+                <Icons.SG1Logo className="h-5 xl:h-auto" />
+              </ExternalLink>
             </div>
           </div>
         </div>

@@ -26,7 +26,11 @@ export function Powered(): JSX.Element {
               <li className="mb-4">
                 <p className="font-bold text-sm md:text-xl">
                   Audited by{" "}
-                  <Link href="" className="text-primary">
+                  <Link
+                    href="https://dev.to/ripplexdev/results-from-the-bishop-fox-security-audit-and-remediation-of-the-cross-chain-bridge-and-evm-sidechain-3eld"
+                    target="_blank"
+                    className="text-primary"
+                  >
                     Bishop Fox
                   </Link>
                 </p>

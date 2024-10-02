@@ -8,7 +8,7 @@ type ExternalLinkProps = {
 
 function ExternalLink({ href, label }: ExternalLinkProps) {
   return (
-    <Link href={href} target="_blank" className="flex h-full items-center justify-center hover:opacity-80">
+    <Link href={href} target="_blank" className="flex h-full items-center justify-center hover:text-primary">
       <div className="flex flex-1">
         <p className="font-bold text-sm md:text-lg xl:text-xl">{label}</p>
       </div>
@@ -37,23 +37,26 @@ export function GetStarted(): JSX.Element {
         <div className="absolute inset-0 grid-overlay">
           <div className="grid grid-cols-[repeat(4,1fr)_0.2fr] grid-rows-[repeat(5,1fr)_0.66fr] md:grid-cols-16 md:grid-rows-8 h-full w-full gap-4 md:gap-0">
             <div className="ml-4 mt-4 md:m-0 h-[50px] md:h-auto col-span-4 col-start-1 row-start-1 md:col-start-3 md:row-start-2 md:col-span-4 md:row-span-1 bg-[#232325] border-[0.5px] border-white p-4 md:p-5">
-              <ExternalLink href="" label="Build an XRPL cross-chain dApp" />
+              <ExternalLink href="crosschain.xrplevm.org" label="Build an XRPL cross-chain dApp" />
             </div>
 
             <div className="ml-4 mt-[64px] md:m-0 h-[50px] md:h-auto col-span-4 col-start-1 row-start-1 md:col-start-3 md:row-start-3 md:col-span-4 md:row-span-1 bg-[#232325] border-[0.5px] border-white p-4 md:p-5">
-              <ExternalLink href="" label="Build an EVM-only dApp" />
+              <ExternalLink href="https://docs.xrplevm.org/docs/evm-sidechain/get-started-evm-sidechain/" label="Build an EVM-only dApp" />
             </div>
 
             <div className="ml-4 md:m-0 h-[50px] md:h-auto col-span-4 col-start-1 row-start-2 md:col-start-7 md:row-start-4 md:col-span-4 md:row-span-1 bg-[#232325] border-[0.5px] border-white p-4 md:p-5">
-              <ExternalLink href="" label="Select a wallet" />
+              <ExternalLink
+                href="https://docs.xrplevm.org/docs/evm-sidechain/connect-metamask-to-xrpl-evm-sidechain/"
+                label="Select a wallet"
+              />
             </div>
 
             <div className="ml-4 mt-[50px] md:m-0 h-[50px] md:h-auto col-span-4 col-start-1 row-start-2 md:col-start-7 md:row-start-5 md:col-span-4 md:row-span-1 bg-[#232325] border-[0.5px] border-white p-4 md:p-5">
-              <ExternalLink href="" label="Try a dApp" />
+              <ExternalLink href="https://explorer.xrplevm.org/apps" label="Try a dApp" />
             </div>
 
             <div className="ml-4 md:m-0 h-[50px] md:h-auto col-span-4 col-start-1 row-start-3 md:col-start-11 md:row-start-5 md:col-span-4 md:row-span-1 bg-[#232325] border-[0.5px] border-white p-4 md:p-5">
-              <ExternalLink href="" label="Explorer Grants" />
+              <ExternalLink href="https://xrplgrants.org/" label="Explorer Grants" />
             </div>
 
             <div className="ml-4 mt-[50px] md:m-0 h-[50px] md:h-auto col-span-4 col-start-1 row-start-3 md:col-start-11 md:row-start-6 md:col-span-4 md:row-span-1 bg-[#232325] border-[0.5px] border-white p-4 md:p-5">
