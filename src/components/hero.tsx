@@ -2,24 +2,12 @@ import Link from "next/link";
 import { Icons } from "./icons";
 import { buttonVariants } from "./ui/button";
 import { cn } from "@/lib/utils";
+import "./hero.css";
 
 export function Hero() {
   return (
     <section className="relative h-[512px] md:h-auto md:aspect-[2/1] overflow-hidden">
-      <div className="relative h-full w-full overflow-hidden">
-        <div
-          className="absolute top-0 left-0 w-2/3 h-full bg-cover bg-center"
-          style={{
-            backgroundImage: "url('/hero-left-bg.webp')",
-          }}
-        />
-        <div
-          className="absolute top-0 right-0 w-1/3 h-full bg-cover bg-center"
-          style={{
-            backgroundImage: "url('/hero-right-bg.webp')",
-          }}
-        />
-      </div>
+      <div className="relative h-full w-full overflow-hidden hero-gradient-effect" />
 
       <div className="absolute inset-0 grid-overlay">
         <div className="grid grid-cols-[repeat(4,1fr)_0.2fr] grid-rows-[repeat(5,1fr)_0.66fr] md:grid-cols-16 md:grid-rows-8 h-full w-full">

@@ -1,3 +1,5 @@
+import "./why.css";
+
 export function Why(): JSX.Element {
   return (
     <section className="p-0 md:pt-[100px] md:pb-[47px]">
@@ -5,20 +7,7 @@ export function Why(): JSX.Element {
         <p className="font-bold text-xl md:text-[40px]">Why build on the XRPL EVM Sidechain</p>
       </div>
       <div className="relative h-[776px] md:h-auto md:aspect-[2/1] overflow-hidden">
-        <div className="relative h-full w-full overflow-hidden">
-          <div
-            className="absolute top-0 left-0 w-1/2 h-full bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/why-left-bg.webp')",
-            }}
-          />
-          <div
-            className="absolute top-0 right-0 w-1/2 h-full bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/why-right-bg.webp')",
-            }}
-          />
-        </div>
+        <div className="relative h-full w-full overflow-hidden why-gradient-effect" />
 
         <div className="absolute inset-0 grid-overlay">
           <div className="grid grid-cols-[repeat(4,1fr)_0.2fr] grid-rows-[repeat(5,1fr)_0.66fr] md:grid-cols-16 md:grid-rows-8 h-full w-full">
