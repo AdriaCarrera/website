@@ -66,7 +66,7 @@ export function Governance(): JSX.Element {
               <ExternalLink href="https://www.xrpl-commons.org/">
                 <Icons.CommonsLogo className="h-5 xl:h-auto" />
               </ExternalLink>
-              <ExternalLink href="">
+              <ExternalLink href="https://purple.markets/">
                 <Icons.PurpleMarketsLogo className="h-5 xl:h-auto" />
               </ExternalLink>
               <ExternalLink href="https://kintsugi.tech/">
