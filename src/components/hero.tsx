@@ -23,7 +23,7 @@ export function Hero() {
 
           <div className="ml-4 md:ml-0 col-span-4 col-start-1 row-start-3 h-[129px] md:h-auto md:col-start-5 md:row-start-5 md:col-span-7 md:row-span-3 bg-background px-6 pt-4 lg:px-10 lg:pt-10 flex flex-col gap-2 lg:gap-10 z-10 border-white border-[0.5px]">
             <h2 className="text-sm md:text-lg xl:text-2xl xl:leading-9 font-normal">
-              Access a vast network of 5M+ XRP wallet holders tap into the best of both the XRP Ledger and EVM worlds.
+              Access a vast network of 5M+ XRP wallet holders and tap into the best of both the XRP Ledger and EVM worlds.
             </h2>
             <p className="font-normal text-xs md:text-sm leading-4 md:leading-5">*Currently on Devnet</p>
           </div>

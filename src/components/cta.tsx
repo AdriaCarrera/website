@@ -10,7 +10,10 @@ export function Cta(): JSX.Element {
         the future today!
       </p>
       <div>
-        <Link href="" className={buttonVariants({ variant: "default" })}>
+        <Link
+          href="https://docs.xrplevm.org/docs/evm-sidechain/get-started-evm-sidechain/"
+          className={buttonVariants({ variant: "default" })}
+        >
           Build the future
         </Link>
       </div>

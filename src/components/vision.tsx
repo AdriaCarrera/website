@@ -18,7 +18,7 @@ export function Vision(): JSX.Element {
               <p className="font-bold text-xl md:text-2xl">Pioneering Decentralized Exchange (DEX)</p>
               <p className="text-sm md:text-xl">
                 Launched in 2012, the XRP Ledger introduced the world&apos;s first DEX, which aggregates all liquidity into a single
-                protocol for capital-efficient trading and asset tokenization.  Its unique ability to find optimal trading paths sets it
+                protocol for capital-efficient trading and asset tokenization. Its unique ability to find optimal trading paths sets it
                 apart in the blockchain world.
               </p>
 

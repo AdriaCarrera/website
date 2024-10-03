@@ -35,7 +35,7 @@ const builders: BuilderProps[] = [
   },
   {
     name: "Ripple",
-    description: "Co-creator of the EVM Sidechain and one of many developers contributing to the XRP Ledger",
+    description: "Co-creator of the XRPL EVM Sidechain and one of many developers contributing to the XRP Ledger",
     logo: <Icons.RippleLogo className="w-20 md:w-auto" />,
     link: "https://ripple.com/",
   },
