@@ -23,9 +23,12 @@ export function Hero() {
 
           <div className="ml-4 md:ml-0 col-span-4 col-start-1 row-start-3 h-[129px] md:h-auto md:col-start-5 md:row-start-5 md:col-span-7 md:row-span-3 bg-background px-6 pt-4 lg:px-10 lg:pt-10 flex flex-col gap-2 lg:gap-10 z-10 border-white border-[0.5px]">
             <h2 className="text-sm md:text-lg xl:text-2xl xl:leading-9 font-normal">
-              Access a vast network of 5M+ XRP wallet holders and tap into the best of both the XRP Ledger and EVM worlds.
+              Access a vast network of 5M+ XRP wallet holders and tap into the
+              best of both the XRP Ledger and EVM worlds.
             </h2>
-            <p className="font-normal text-xs md:text-sm leading-4 md:leading-5">*Currently on Devnet</p>
+            <p className="font-normal text-xs md:text-sm leading-4 md:leading-5">
+              *Currently on Devnet
+            </p>
           </div>
 
           <div className="col-span-2 col-start-3 row-start-4 h-[45px] md:h-auto md:col-start-12 md:row-start-7 md:col-span-3 md:row-span-1 z-10 border-white border-[0.5px]">
@@ -33,11 +36,13 @@ export function Hero() {
               className={cn(
                 buttonVariants({
                   variant: "default",
-                  className: cn("w-full h-full rounded-none font-semibold text-xl md:text-2xl"),
+                  className: cn(
+                    "w-full h-full rounded-none font-semibold text-xl md:text-2xl"
+                  ),
                 }),
                 "hover:bg-[#7919FF]"
               )}
-              href="https://docs.xrplevm.org/docs/evm-sidechain/get-started-evm-sidechain/"
+              href="https://docs.xrplevm.org"
               target="_blank"
             >
               Get Started
