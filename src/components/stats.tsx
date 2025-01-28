@@ -4,7 +4,7 @@ import "./stats.css";
 export async function Stats() {
   const [stats, dApps] = await Promise.all([
     fetch("https://explorer-stats.xrplevm.org/api/v1/counters"),
-    fetch("https://explorer.xrplevm.org/assets/marketplace_config.json"),
+    fetch("https://explorer.xrplevm.org/assets/configs/marketplace_config.json"),
   ]);
   const statsData = await stats.json();
 
