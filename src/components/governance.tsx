@@ -1,7 +1,9 @@
 import Link, { LinkProps } from "next/link";
 import { Icons } from "./icons";
 
-function ExternalLink(props: LinkProps & { children: React.ReactNode }): JSX.Element {
+function ExternalLink(
+  props: LinkProps & { children: React.ReactNode }
+): JSX.Element {
   return (
     <Link className="hover:opacity-80" target="_blank" {...props}>
       {props.children}
@@ -20,18 +22,30 @@ export function Governance(): JSX.Element {
 
           <div className="ml-4 md:m-0 col-start-1 row-start-1 mt-[96px] col-span-4 h-[344px] md:h-auto md:col-start-2 md:row-start-3 md:col-span-7 md:row-span-5 bg-background p-4 md:p-6 xl:p-8 flex flex-col gap-4 md:gap-8 border-[0.5px] border-white">
             <p className="font-bold text-sm md:text-xl">
-              XRPL EVM Sidechain is open and permissionless, allowing anyone to build or participate
+              XRPL EVM Sidechain is open and permissionless, allowing anyone to
+              build or participate
             </p>
 
             <ol className="list-decimal pl-5 text-sm md:text-base xl:text-xl ignore-marker-style">
-              <li className="mb-4">Novel Proof of Authority governance with 26/32 validators</li>
-              <li className="mb-4">Transparent and public proposal mechanism the community engagement</li>
-              <li className="mb-4">Operational validator set with over 35 proposals passed</li>
+              <li className="mb-4">
+                Novel Proof of Authority governance with 26/32 validators
+              </li>
+              <li className="mb-4">
+                Transparent and public proposal mechanism the community
+                engagement
+              </li>
+              <li className="mb-4">
+                Operational validator set with over 35 proposals passed
+              </li>
             </ol>
 
             <div className="text-sm md:text-xl font-bold">
               <p>Want to become a validator?</p>
-              <Link href="https://docs.xrplevm.org/docs/evm-sidechain/join-evm-sidechain-devnet/" target="_blank" className="text-primary">
+              <Link
+                href="https://docs.xrplevm.org/pages/operators"
+                target="_blank"
+                className="text-primary"
+              >
                 Find out how
               </Link>
             </div>
